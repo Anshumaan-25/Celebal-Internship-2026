@@ -1,9 +1,9 @@
 # Week 5: Deep Learning Text Generation (RNN, LSTM, GRU)
 
-## 📌 Project Overview
+##  Project Overview
 This repository contains a comprehensive deep learning pipeline designed to compare the sequence modelling, memory retention, and text generation capabilities of three foundational recurrent architectures: **Vanilla RNN**, **LSTM**, and **GRU**. We train these models on a complex, archaic text corpus (an extract from Shakespeare's *Hamlet*) to evaluate how effectively they learn linguistic structure and long-term dependencies.
 
-## 🏗️ Architecture & Enhancements
+##  Architecture & Enhancements
 To move beyond a basic baseline implementation, this pipeline incorporates several robust deep learning techniques:
 - **Modular Functional Pipeline:** A scalable `build_and_train_model` function keeps code DRY.
 - **Regularization:** Implementation of `Dropout(0.2)` to mitigate early overfitting.
@@ -13,7 +13,7 @@ To move beyond a basic baseline implementation, this pipeline incorporates sever
 
 ---
 
-## 📊 Performance & Diagnostics
+##  Performance & Diagnostics
 
 ### Training Efficiency
 Based on execution benchmarking, the computational costs differ significantly:
@@ -30,7 +30,7 @@ The learning curves for Validation Loss and Validation Perplexity demonstrate ex
 
 ---
 
-## ✍️ Text Generation & Temperature Scaling
+##  Text Generation & Temperature Scaling
 Using the sequence "**to die to sleep**", text was generated using the LSTM across different temperature scales to demonstrate probabilistic variance:
 
 *   **Temp 0.5 (Focused):** `to die to sleep that ache calamity perchance what`
@@ -42,7 +42,7 @@ Using the sequence "**to die to sleep**", text was generated using the LSTM acro
 
 ---
 
-## 🔬 Core Learnings & Next Steps
+##  Core Learnings & Next Steps
 1.  **Gated Architectures vs Vanilla RNN:** The Vanilla RNN's susceptibility to vanishing gradients limits its contextual generation. LSTM and GRU mitigate this mathematically.
 2.  **Dataset Scale:** Deep Learning models require a significantly larger corpus (100x+) to deduce generalizable grammatical rules rather than operating as probabilistic sequence lookup tables.
 3.  **Perplexity Matters:** Evaluating text generation purely on 'accuracy' is insufficient; Perplexity gives a truer read of the model's generalized confidence.
