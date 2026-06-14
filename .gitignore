@@ -1,0 +1,10 @@
+# Virtual environment (large — recreate with requirements.txt)
+.venv/
+
+# Downloaded dataset (auto-downloads on first run)
+data/
+
+# Python caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
