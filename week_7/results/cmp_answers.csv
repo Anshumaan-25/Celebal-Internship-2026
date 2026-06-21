@@ -1,2 +1,3 @@
 method,n,accuracy,abstention,labels
 dense,5,0.4,0.2,"{'CORRECT': 2, 'ABSTAIN': 1, 'PARTIAL': 2}"
+rerank,4,0.75,0.25,"{'CORRECT': 3, 'ABSTAIN': 1}"
