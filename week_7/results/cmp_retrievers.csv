@@ -1,0 +1,5 @@
+method,recall@5,precision@5,ndcg@5,mrr,accuracy,abstention
+dense,1.0,0.8,1.0,1.0,0.0,0.0
+bm25,1.0,0.8333,0.9167,0.8889,0.0,0.0
+hybrid,1.0,0.8667,1.0,1.0,0.0,0.0
+rerank,1.0,0.8333,1.0,1.0,0.0,0.0

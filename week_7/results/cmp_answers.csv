@@ -1,0 +1,2 @@
+method,n,accuracy,abstention,labels
+dense,5,0.4,0.2,"{'CORRECT': 2, 'ABSTAIN': 1, 'PARTIAL': 2}"

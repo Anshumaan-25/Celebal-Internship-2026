@@ -1,0 +1,52 @@
+# ============================================================
+# Document Question Answering System (RAG) — Week 7
+# Core dependencies. This set alone runs the full pipeline,
+# evaluation, plots, and the Streamlit app.
+# Tested with Python 3.10–3.12.
+# ============================================================
+
+# --- Generation: Google Gemini (free tier, current SDK) ---
+google-genai>=1.0.0
+
+# --- Embeddings: local & free (also used for re-ranking) ---
+sentence-transformers>=3.0.0
+
+# --- Vector store + lexical (keyword) search ---
+chromadb>=0.5.0
+rank-bm25>=0.2.2
+
+# --- Dataset loading (HuggingFace: vectara/open_ragbench) ---
+datasets>=3.0.0
+huggingface-hub>=0.25.0
+
+# --- PDF ingestion (your own PDFs / Streamlit upload) ---
+pypdf>=5.0.0
+
+# --- Evaluation & data wrangling ---
+scikit-learn>=1.5.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# --- Plotting: Recall@k curves, confusion-matrix heatmaps ---
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# --- Demo app ---
+streamlit>=1.39.0
+
+# --- Notebook / analysis ---
+jupyter>=1.1.0
+ipykernel>=6.29.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+
+# ============================================================
+# OPTIONAL — bonus RAGAS metrics (faithfulness, answer
+# relevancy, context precision/recall via the RAGAS framework).
+# This project ships its own transparent metrics, so RAGAS is
+# only a cross-check. Install separately if you want it:
+#
+#   pip install "ragas>=0.2,<0.3" langchain-google-genai
+# ============================================================
